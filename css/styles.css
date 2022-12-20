@@ -245,6 +245,7 @@ header {
     min-width: 270px;
     min-height: 120px;
     background-color: var(--filter-button-bckground);
+    border-radius: 4px;
     
 }
 
@@ -339,10 +340,8 @@ header {
 .social-media-links {
     display:flex;
     margin-top: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-left: 0;
+    justify-content: center;
 }
 
 
@@ -364,9 +363,8 @@ header {
 }
 
 .team-contact {
-    background-color: transparent;
-    min-height: 45px;
-    min-width: 45px;
+    height: 45px;
+    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,7 +384,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 32px 16px 32px;
     width: 170px;
     height: 92px;
     border: solid 1px var(--social-media-icon);
@@ -403,13 +400,14 @@ header {
 .footer {
     background-color: var(--hero-background-color);
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .down-info {
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+    align-items: baseline;
+    }
 
 .bottom-icon-space {
     display: inline-block;
@@ -448,8 +446,8 @@ header {
 }
 
 .footer-social{
-    padding-top: 12px;
-    padding-bottom: 100px;
+    margin-left: 70px;
+
 }
 
 .join{
@@ -460,19 +458,17 @@ header {
     letter-spacing: 0.03;
     text-transform: uppercase;
     margin:0;
-    margin-left: 70px;
 }
 
-.social-media-footer{
-    display: flex;
-    padding-top: 20px;
-    padding-left: 0px;
-    margin-left: 70px;
-}
+.social-media-footer {
+    display: flex;    
+} 
+
 
 .soc-med-down {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    fill: var(--main-body-color);
 }
 
 .soc-med-down:hover {
